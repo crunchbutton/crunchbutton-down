@@ -36,7 +36,7 @@
 	</body>
 	<script>
 		setTimeout(function() {
-			location.href = document.referrer;
+			location.href = location.pathname ? 'https://' + location.pathname : document.referrer;
 		}, 5000);
 	</script>
 </html>
